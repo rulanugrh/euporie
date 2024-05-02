@@ -11,7 +11,7 @@ elif command[1] == "generate_data_preparation":
     dt.generate_data()
 elif command[1] == "show_dataframe":
     print(business.showDataFrame().to_string(index=False))
-elif command[1] == "generate_mean":
+elif command[1] == "generate_accumulation":
     dt.getMean()
 elif command[1] == "graph_2024":
     dv.showGraph2024Inflation()
