@@ -25,6 +25,13 @@ def helpShow():
     head = ["flag", "description", "example usage"]
     print(tabulate(helps, headers=head, tablefmt="grid"))
 
+def helpGenerate():
+    helps = [
+        ["inflation", "generated data preparation inflation", "ex. python main.py generated inflation [ preparation / mean ]"],        
+    ]
+
+    head = ["flag", "description", "example usage"]
+    print(tabulate(helps, headers=head, tablefmt="grid"))
 def main(command: List[str]):
     if command[1] == "show":
         if command[2] == "inflation":
@@ -51,6 +58,8 @@ def main(command: List[str]):
                 dt.generate_data()
             elif command[3] == "mean":
                 dt.getMean()
+        else:
+            helpGenerate()
     else:
         helpCommand()
 
