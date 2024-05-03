@@ -12,37 +12,31 @@ $ py -m pip install requrements.txt
 ```
 
 ## Command Line
-**_Show Info about Data Structure_**
+**_to showing help command_**
 ```bash
-$ python main.py show_info
+$ python main.py help
++----------+-----------------------------------------------------------------+
+| flag     | description                                                     |
++==========+=================================================================+
+| help     | print help command                                              |
++----------+-----------------------------------------------------------------+
+| show     | showing about info dataframe or graph [inflation / cpi / graph] |
++----------+-----------------------------------------------------------------+
+| generate | generated preparation data or mean data                         |
++----------+-----------------------------------------------------------------+
 ```
 
-**_Show all Raw Data_**
+**_to print `show help` command_**
 ```bash
-$ python main.py show_dataframe
-```
+$ python main.py show help
 
-**_Generate data preparation_**
-```bash
-$ python main.py generate_data_preparation
-```
-
-**_Generate data accumulation per-year_**
-```bash
-$ python main.py generate_accumulation
-```
-
-**_Show graph for Inflation 2024_**
-```bash
-$ python main.py graph_2024
-```
-
-**_Show graph for Inflation 2023_**
-```bash
-$ python main.py graph_2023
-```
-
-**_Show graph for Inflation 2024_**
-```bash
-$ python main.py graph_2022
++-----------------+------------------------------+------------------------------------------------------------------------------+
+| flag            | description                  | example usage                                                                |
++=================+==============================+==============================================================================+
+| inflation       | show about info or inflation | ex. python main.py show inflation [ info / dataframe ]                       |
++-----------------+------------------------------+------------------------------------------------------------------------------+
+| cpi             | show about info or cpi       | ex. python main.py show info [ info / dataframe ]                            |
++-----------------+------------------------------+------------------------------------------------------------------------------+
+| graph inflation | show graph inflation         | ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 ] |
++-----------------+------------------------------+------------------------------------------------------------------------------+
 ```
