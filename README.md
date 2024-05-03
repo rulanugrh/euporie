@@ -13,7 +13,7 @@ $ py -m pip install requrements.txt
 
 ## Command Line
 **_to showing help command_**
-```cmd
+```
 $ python main.py help
 +----------+-----------------------------------------------------------------+
 | flag     | description                                                     |
@@ -27,7 +27,7 @@ $ python main.py help
 ```
 
 **_to print `show help` command_**
-```cmd
+```
 $ python main.py show help
 
 +-----------------+------------------------------+------------------------------------------------------------------------------+
@@ -42,7 +42,7 @@ $ python main.py show help
 ```
 
 **_to print `generate help` command_**
-```cmd
+```
 $ python main.py generate help
 
 +-----------+--------------------------------------+---------------------------------------------------------------+
