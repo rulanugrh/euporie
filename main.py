@@ -17,8 +17,8 @@ def helpCommand():
 
 def helpShow():
     helps = [
-        ["inflation", "show about info or inflation", "ex. python main.py show inflation [ info / dataframe ]"],        
-        ["cpi", "show about info or cpi", "ex. python main.py show info [ info / dataframe ]"],
+        ["inflation", "show about info or dataframe", "ex. python main.py show inflation [ info / dataframe ]"],        
+        ["cpi", "show about info or dataframe", "ex. python main.py show cpi [ info / dataframe ]"],
         ["graph inflation", "show graph inflation", "ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 ]"]
     ]
 
