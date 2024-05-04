@@ -19,7 +19,9 @@ def helpShow():
     helps = [
         ["inflation", "show about info or dataframe", "ex. python main.py show inflation [ info / dataframe ]"],        
         ["cpi", "show about info or dataframe", "ex. python main.py show cpi [ info / dataframe ]"],
-        ["graph inflation", "show graph inflation", "ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 ]"]
+        ["graph inflation", "show graph inflation", "ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 / mean ]"],
+        ["graph cpi", "show graph cpi", "ex. python main.py show graph cpi [ 2020 / 2021 / 2022 / 2023 / 2024 ]"]
+
     ]
 
     head = ["flag", "description", "example usage"]
