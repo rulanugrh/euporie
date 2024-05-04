@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('./data/inflasi-rupiah.csv')
+data = pd.read_csv('./data/inflation/inflasi-rupiah.csv')
 
 def showInfoData():
     data.info()

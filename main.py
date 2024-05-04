@@ -27,7 +27,9 @@ def helpShow():
 
 def helpGenerate():
     helps = [
-        ["inflation", "generated data preparation inflation", "ex. python main.py generated inflation [ preparation / mean ]"],        
+        ["inflation", "generated data preparation inflation", "ex. python main.py generated inflation [ preparation / mean ]"],
+        ["cpi", "generated data preparation cpi", "ex. python main.py generated inflation [ preparation ]"],        
+
     ]
 
     head = ["flag", "description", "example usage"]
@@ -58,6 +60,9 @@ def main(command: List[str]):
                 dt.generate_data()
             elif command[3] == "mean":
                 dt.getMean()
+        if command[2] == "cpi":
+            if command[3] == "preparation":
+                dt.generateDataCPI()
         else:
             helpGenerate()
     else:
