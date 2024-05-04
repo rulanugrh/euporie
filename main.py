@@ -52,6 +52,12 @@ def main(command: List[str]):
                     dv.showGraph2023Inflation()
                 elif command[4] == "2022":
                     dv.showGraph2022Inflation()
+                elif command[4] == "2021":
+                    dv.showGraph2021Inflation()
+                elif command[4] == "2020":
+                    dv.showGraph2020Inflation()
+                elif command[4] == "mean":
+                    dv.showGraphMeanInflation()
         else:
             helpShow()
     elif command[1] == "generate":

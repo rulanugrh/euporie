@@ -47,12 +47,14 @@ def generate_data():
                     'bulan': rows[1],
                     'nilai_inflasi': rows[3]
                 })
+                
             
             elif rows[2] == "2020":
                 inflasi_2020.append({
                     'bulan': rows[1],
                     'nilai_inflasi': rows[3]
                 })
+
 
     with open('./data/inflation/inflasi_rupiah_2024.csv', 'w', newline='') as dt2024:
         writer = csv.DictWriter(dt2024, fieldnames=fields)
@@ -79,7 +81,7 @@ def generate_data():
         writer.writeheader()
         writer.writerows(inflasi_2020)
 
-    with open('./data/inflation_accumulation.csv', 'w', newline='') as dtaccumulation:
+    with open('./data/inflation/inflation_accumulation.csv', 'w', newline='') as dtaccumulation:
         writer = csv.DictWriter(dtaccumulation, fieldnames=field_calculation)
         writer.writeheader()
         writer.writerows(calculation)
@@ -194,20 +196,20 @@ def getMean():
 
     with open('./data/inflation/mean_inflation.csv', 'w', newline='') as fs:
         mean = [{
-            'tahun': 2024,
-            'rata_rata': math.fsum(i2024)
+            'tahun': "2024",
+            'rata_rata': (math.fsum(i2024) / 3)
         }, {
-            'tahun': 2023,
-            'rata_rata': math.fsum(i2023)
+            'tahun': "2023",
+            'rata_rata': (math.fsum(i2023) / 12)
         }, {
-            'tahun': 2022,
-            'rata_rata': math.fsum(i2022)
+            'tahun': "2022",
+            'rata_rata': (math.fsum(i2022) / 12)
         }, {
-            'tahun': 2021,
-            'rata_rata': math.fsum(i2021)
+            'tahun': "2021",
+            'rata_rata': (math.fsum(i2021) / 12)
         }, {
-            'tahun': 2020,
-            'rata_rata': math.fsum(i2020)
+            'tahun': "2020",
+            'rata_rata': (math.fsum(i2020) / 12)
         }]
 
         writer = csv.DictWriter(fs, fieldnames=['tahun', 'rata_rata'])
