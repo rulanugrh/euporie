@@ -50,4 +50,6 @@ $ python main.py generate help
 +===========+======================================+===============================================================+
 | inflation | generated data preparation inflation | ex. python main.py generated inflation [ preparation / mean ] |
 +-----------+--------------------------------------+---------------------------------------------------------------+
+| cpi       | generated data preparation cpi       | ex. python main.py generated inflation [ preparation ]        |
++-----------+--------------------------------------+---------------------------------------------------------------+
 ```
