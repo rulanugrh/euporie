@@ -95,7 +95,7 @@ def generateDataCPI():
         for rows in plot:
             if rows[13] == "2020":
                 cpi_2020.append({
-                    'periode': rows[0],
+                    "periode": rows[0],
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
