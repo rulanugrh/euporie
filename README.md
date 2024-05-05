@@ -8,7 +8,7 @@ $ pip install -r requirements.txt
 $ python -m pip install requirements.txt
 
 # or can use this command
-$ py -m pip install requrements.txt
+$ py -m pip install requirements.txt
 ```
 
 ## Command Line
