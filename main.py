@@ -45,7 +45,9 @@ def main(command: List[str]):
                 print(business.showDataFrame().to_string(index=False))
         elif command[2] == "cpi":
             if command[3] == "info":
-                business.showInfoData()
+                business.showInfoCPI()
+            elif command[3] == "dataframe":
+                print(business.showDataFrameCPI().to_string(index=False))
         elif command[2] == "graph":
             if command[3] == "inflation":
                 if command[4] == "2024":

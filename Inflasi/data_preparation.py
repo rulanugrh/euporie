@@ -88,7 +88,7 @@ def generate_data():
 
 
 def generateDataCPI():
-    field = ["periode", "food_n_beverages", "clothing_footwear", "house_water_electricity", "health", "transport", "education_services", "other"]
+    field = ["periode", "food_n_beverages", "clothing_footwear", "house_water_electricity", "furnishing", "health", "transport", "finansial_services", "sport", "education_services", "food_restaurants", "other"]
 
     with open('./data/cpi/cpi_indonesia.csv', 'r') as f:
         plot = csv.reader(f, delimiter=',')
@@ -99,53 +99,73 @@ def generateDataCPI():
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
+                    'furnishing': rows[5],
                     'health': rows[6],
                     'transport': rows[7],
+                    'finansial_services': rows[8],
+                    'sport': rows[9],
                     'education_services': rows[10],
+                    'food_restaurants': rows[11],
                     'other': rows[12]
                 })
             elif rows[13] == "2021":
                 cpi_2021.append({
-                    'periode': rows[0],
+                    "periode": rows[0],
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
+                    'furnishing': rows[5],
                     'health': rows[6],
                     'transport': rows[7],
+                    'finansial_services': rows[8],
+                    'sport': rows[9],
                     'education_services': rows[10],
+                    'food_restaurants': rows[11],
                     'other': rows[12]
                 })
             elif rows[13] == "2022":
                 cpi_2022.append({
-                    'periode': rows[0],
+                    "periode": rows[0],
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
+                    'furnishing': rows[5],
                     'health': rows[6],
                     'transport': rows[7],
+                    'finansial_services': rows[8],
+                    'sport': rows[9],
                     'education_services': rows[10],
+                    'food_restaurants': rows[11],
                     'other': rows[12]
                 })
             elif rows[13] == "2023":
                 cpi_2023.append({
-                    'periode': rows[0],
+                    "periode": rows[0],
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
+                    'furnishing': rows[5],
                     'health': rows[6],
                     'transport': rows[7],
+                    'finansial_services': rows[8],
+                    'sport': rows[9],
                     'education_services': rows[10],
+                    'food_restaurants': rows[11],
                     'other': rows[12]
                 })
             elif rows[13] == "2024":
                 cpi_2024.append({
-                    'periode': rows[0],
+                    "periode": rows[0],
                     'food_n_beverages': rows[2],
                     'clothing_footwear': rows[3],
                     'house_water_electricity': rows[4],
+                    'furnishing': rows[5],
                     'health': rows[6],
                     'transport': rows[7],
+                    'finansial_services': rows[8],
+                    'sport': rows[9],
                     'education_services': rows[10],
+                    'food_restaurants': rows[11],
                     'other': rows[12]
                 })
 
