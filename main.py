@@ -19,7 +19,7 @@ def helpShow():
     helps = [
         ["inflation", "show about info or dataframe", "ex. python main.py show inflation [ info / dataframe ]"],        
         ["cpi", "show about info or dataframe", "ex. python main.py show cpi [ info / dataframe ]"],
-        ["graph inflation", "show graph inflation", "ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 / mean ]"],
+        ["graph inflation", "show graph inflation", "ex. python main.py show graph inflation [ 2020 / 2021 / 2022 / 2023 / 2024 / mean / all ]"],
         ["graph cpi", "show graph cpi", "ex. python main.py show graph cpi [ 2020 / 2021 / 2022 / 2023 / 2024 / all ]"]
 
     ]
@@ -62,6 +62,8 @@ def main(command: List[str]):
                     dv.showGraph2020Inflation()
                 elif command[4] == "mean":
                     dv.showGraphMeanInflation()
+                elif command[4] == "all":
+                    dv.showInflationAll()
             elif command[3] == "cpi":
                 if command[4] == "2024":
                     dv.showCPI2024()

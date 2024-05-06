@@ -3,33 +3,28 @@ import matplotlib.pyplot as plt
 from . import *
 
 def showGraph2024Inflation():
-    data = pd.read_csv('./data/inflation/inflasi_rupiah_2024.csv')
-    data.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="barh")
+    dataInflasi2024.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="barh")
 
     plt.title("Inflasi Rupiah 2024")
     plt.show()
 
 def showGraph2023Inflation():
-    data = pd.read_csv('./data/inflation/inflasi_rupiah_2023.csv')
-    data.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2023.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
     plt.title("Inflasi Rupiah 2023")
     plt.show()
 
 def showGraph2022Inflation():
-    data = pd.read_csv('./data/inflation/inflasi_rupiah_2022.csv')
-    data.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2022.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
     plt.title("Inflasi Rupiah 2022")
     plt.show()
 
 def showGraph2021Inflation():
-    data = pd.read_csv('./data/inflation/inflasi_rupiah_2021.csv')
-    data.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2021.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
     plt.title("Inflasi Rupiah 2021")
     plt.show()
 
 def showGraph2020Inflation():
-    data = pd.read_csv('./data/inflation/inflasi_rupiah_2020.csv')
-    data.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2020.plot(x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
     plt.title("Inflasi Rupiah 2020")
     plt.show()
 
@@ -81,3 +76,21 @@ def showCPIAll():
     axis[4].set_title('CPI 2020')
 
     plt.show()
+
+def showInflationAll():
+    fig, axis = plt.subplots(nrows=1, ncols=5)
+    dataInflasi2024.plot(ax=axis[0], x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2023.plot(ax=axis[1], x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2022.plot(ax=axis[2], x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2021.plot(ax=axis[3], x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+    dataInflasi2020.plot(ax=axis[4], x="bulan", y="nilai_inflasi", xlabel="Bulan", ylabel="Nilai", kind="bar")
+
+    axis[0].set_title('Inflation 2024')
+    axis[1].set_title('Inflation 2023')
+    axis[2].set_title('Inflation 2022')
+    axis[3].set_title('Inflation 2021')
+    axis[4].set_title('Inflation 2020')
+
+    plt.show()
+
+    
